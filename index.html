@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Essay Pasal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="image.png" type="image/x-icon">
+</head>
+
+<body>
+  <div id="game-container">
+    <h1 style="color: #333;">Game Essay Pasal</h1>
+    <div id="question-container">
+      <p id="question-number" style="font-size: 1.2em; color: #555;">Nomor Pasal akan tampil di sini</p>
+      <input type="text" id="answer" placeholder="Jawaban Anda">
+      <input type="text" id="punishment" placeholder="Penjara Paling Lama">
+      <br>
+      <button onclick="submitAnswer()" style="background-color: #007BFF; color: white;">Submit</button>
+    </div>
+    <div id="end-container" style="display: none;">
+      <h2 style="color: #333;">Game Selesai!</h2>
+      <p id="final-score" style="font-size: 1.2em; color: #555;"></p>
+      <div class="question-review" id="question-review"></div>
+      <button onclick="startGame()" style="background-color: #28a745; color: white;">Main Lagi</button>
+    </div>
+  </div>
+
+  <ul id="randomized-list"></ul>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
